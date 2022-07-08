@@ -287,6 +287,8 @@ body {
 }
 
 .photo__gallery {
+  display: grid;
+  grid-gap: 20px;
 }
 
 .photo {
@@ -307,10 +309,12 @@ body {
 
 @media (min-width: 640px) {
   .photo__gallery {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .photo__gallery {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
