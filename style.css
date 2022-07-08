@@ -1,0 +1,316 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #393b4c;
+  font-family: "Raleway", sans-serif;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-mark {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-name {
+  height: 28px;
+  margin-bottom: -4px;
+}
+
+.nav {
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  margin-left: 24px;
+}
+
+.nav li a {
+  color: #2b2b2b;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  border-bottom: 2px solid #e37435;
+}
+
+@media (min-width: 640px) {
+  .nav {
+    display: flex;
+  }
+}
+
+.intro {
+}
+
+.intro__heading {
+  font-size: 6vw;
+  padding: 48px 24px 24px;
+  font-weight: 400;
+}
+
+.intro__heading__jumbo {
+  font-size: 16vw;
+  margin-top: 0.25em;
+  display: block;
+  font-weight: bold;
+  font-family: "Alice", "Raleway", sans-serif;
+  color: #e37435;
+}
+
+.intro__info {
+  padding: 32px 24px;
+  background-color: #e6eece;
+  z-index: 2;
+}
+
+.intro__info__heading {
+  font-size: 20px;
+}
+
+.intro__info__content {
+  line-height: 1.5;
+}
+
+.intro__img {
+}
+
+.intro__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro__social {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 24px 0;
+}
+
+.intro__social__item {
+  width: 36px;
+  height: 36px;
+  margin: 0 0 0 32px;
+  background-color: #8eaa3c;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+@media (min-width: 640px) {
+  .intro {
+  }
+
+  .intro__heading {
+    font-size: 5vw;
+  }
+
+  .intro__heading__jumbo {
+    font-size: 12vw;
+  }
+
+  .intro__info {
+  }
+
+  .intro__info__heading {
+    font-size: 20px;
+  }
+
+  .intro__info__content {
+    font-size: 18px;
+  }
+
+  .intro__img {
+  }
+
+  .intro__social {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .intro__social__item {
+    margin: 32px 0 0 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro {
+  }
+
+  .intro__heading {
+    font-size: 3vw;
+    margin: 44px 0;
+    padding: 0;
+  }
+
+  .intro__heading__jumbo {
+    font-size: 7vw;
+  }
+
+  .intro__info {
+    padding: 50px 280px 50px 100px;
+  }
+
+  .intro__info__content {
+    line-height: 1.5;
+  }
+
+  .intro__img {
+  }
+
+  .intro__social {
+    flex-direction: row;
+  }
+
+  .intro__social__item {
+    margin: 0 32px 0 0;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-top: 64px;
+  padding-bottom: 32px;
+}
+
+.section-header__subtitle {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.section-header__title {
+  font-family: "Alice", "Raleway", sans-serif;
+  font-size: 32px;
+  color: #e37435;
+  margin: 16px 0 0;
+}
+
+@media (min-width: 1024px) {
+  .section-header__subtitle {
+    font-size: 24px;
+  }
+
+  .section-header__title {
+    font-size: 48px;
+  }
+}
+
+.attractions {
+  margin-top: 24px;
+}
+
+.attraction-img {
+  width: 100%;
+}
+
+.attraction-info {
+  background-color: #e6eece;
+  padding: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.attraction-info__title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.attraction-info__content {
+  line-height: 1.6;
+  margin-top: 24px;
+}
+
+@media (min-width: 640px) {
+  .attraction-info {
+    padding: 60px;
+    margin-top: -100px;
+  }
+
+  .attraction-info:first-of-type {
+  }
+
+  .attraction-info:last-of-type {
+  }
+
+  .attraction-img:last-of-type {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .attraction-info {
+    margin-top: 0;
+  }
+
+  .attraction-img:first-of-type {
+  }
+
+  .attraction-img:last-of-type {
+  }
+
+  .attraction-info:first-of-type {
+  }
+
+  .attraction-info:last-of-type {
+    padding-left: 100px;
+    margin-top: 40px;
+  }
+}
+
+.photo__gallery {
+}
+
+.photo {
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  padding-top: calc(3 / 5 * 100%);
+}
+
+.photo__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 640px) {
+  .photo__gallery {
+  }
+}
+
+@media (min-width: 1024px) {
+  .photo__gallery {
+  }
+}
