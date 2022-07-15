@@ -66,7 +66,7 @@ body {
 
 .intro {
   display: grid;
-  grid-template-columns: 100px 1fr 200px 200px 1fr 100px;
+  grid-template-columns: 100px 1fr minmax(auto, 200px) minmax(auto, 200px) 1fr 100px;
 }
 
 .intro__heading {
